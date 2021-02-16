@@ -1,6 +1,3 @@
-
-showPrimes(20);
-
 // Prime (whose factors are only 1 and itself)
 // Composite (whose factors are
 
@@ -10,3 +7,20 @@ showPrimes(20);
 // 11 = 1, 11
 // 13 = 1, 13
 
+
+showPrimes(10);
+
+function showPrimes(limit) {
+    for (let number = 2; number <= limit; number++) {
+
+        let isPrime = true;
+        for (let factor = 2; factor < number; factor++) {
+           if (number % factor === 0) { 
+           isPrime = false;
+           break;
+        }
+    }
+
+    if (isPrime) console.log(number);
+    }
+}

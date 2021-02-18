@@ -10,7 +10,16 @@ function Circle(radius) {
     }
 }
 
-const circle = new Circle(1);
+const circle1 = new Function('radius'), `
+this.radius = radius;
+this.draw = function() {
+    console.log('draw');
+}
+`);
+
+const circle = newCircle1(1);
+
+const another = new Circle(1);
 
 // Both patterns are equally good - use Factory with Javascript
 

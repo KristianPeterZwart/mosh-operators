@@ -17,6 +17,9 @@ this.draw = function() {
 }
 `);
 
+Circle.call({}, 1)
+Circle.apply({}, [1, 2, 3]);
+
 const circle = newCircle1(1);
 
 const another = new Circle(1);
@@ -30,3 +33,5 @@ let x = {};
 new String(); // ''. "", `` // 
 new Boolean(); // true, false - boolean literals
 new Number(); // 1, 2, 3, ...
+
+// in Javascript Functions are Objects

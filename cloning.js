@@ -15,7 +15,13 @@ const circle = {
 // another['radius'] = circle['radius'];
 
 // better code to do the same as above
+// const another = Object.assign({}, circle);
 
-const another = Object.assign({}, circle);
+// const another = Object.assign({
+    // color: 'yellow'
+// }, circle);
+
+// use better way spread operator instead
+const another = { ...circle };
 
 console.log(another);

@@ -26,4 +26,4 @@ return (current > accumulator) ? current : accumulator;
 }
 
 // reduce method 
-// array.reduce((a, b) => (a > b) ? a : b);
+// return array.reduce((a, b) => (a > b) ? a : b);

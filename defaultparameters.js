@@ -1,0 +1,10 @@
+
+function interest(principal, rate = 3.5, years = 5) {
+    return principal * rate / 100 * years;
+}
+
+console.log(interest(10000, undefined, 5));
+
+// || logical OR operator
+
+// give function parameter default value = make last - or all values after that default
